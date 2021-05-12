@@ -1,6 +1,0 @@
-@mixin heading($display, $fsize, $fweight, $letter-space) {
-  display: #{$display};
-  font-size: $fsize;
-  font-weight: $fweight;
-  letter-spacing: $letter-space;
-}
