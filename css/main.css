@@ -61,10 +61,12 @@ body {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .header .text-box .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 .header .text-box .heading-primary-main {
   display: block;
@@ -81,6 +83,26 @@ body {
   letter-spacing: 17.4px;
   animation-name: moveInRight;
   animation-duration: 2s;
+}
+.header .text-box .btn:link, .header .text-box .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.header .text-box .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.header .text-box .btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+.header .text-box .btn-white {
+  background-color: #fff;
+  color: #777;
 }
 
 /*# sourceMappingURL=main.css.map */
