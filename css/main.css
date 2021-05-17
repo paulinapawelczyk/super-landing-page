@@ -64,27 +64,27 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-.header .logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.header .logo-box .logo {
+.header__logo {
   height: 3.5rem;
 }
-.header .text-box {
+.header__text-box {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.header .text-box .heading-primary {
+.header__text-box .heading-primary {
   color: white;
   text-transform: uppercase;
   margin-bottom: 4rem;
 }
-.header .text-box .heading-primary-main {
+.header__text-box .heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -92,7 +92,7 @@ body {
   animation-name: moveInLeft;
   animation-duration: 2s;
 }
-.header .text-box .heading-primary-sub {
+.header__text-box .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -100,7 +100,7 @@ body {
   animation-name: moveInRight;
   animation-duration: 2s;
 }
-.header .text-box .btn:link, .header .text-box .btn:visited {
+.header__text-box .btn:link, .header__text-box .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 2rem;
@@ -110,15 +110,15 @@ body {
   position: relative;
   font-size: 1.6rem;
 }
-.header .text-box .btn:hover {
+.header__text-box .btn:hover {
   transform: translateY(-0.4rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 }
-.header .text-box .btn:active {
+.header__text-box .btn:active {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
 }
-.header .text-box .btn::after {
+.header__text-box .btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -130,18 +130,18 @@ body {
   z-index: -1;
   transition: 0.6s;
 }
-.header .text-box .btn:hover::after {
+.header__text-box .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.header .text-box .btn-white {
+.header__text-box .btn--white {
   background-color: white;
   color: #777777;
 }
-.header .text-box .btn-white::after {
+.header__text-box .btn--white::after {
   background-color: white;
 }
-.header .text-box .btn-animated {
+.header__text-box .btn--animated {
   animation: moveInBottom 1s 0.7s;
   animation-fill-mode: backwards;
 }
