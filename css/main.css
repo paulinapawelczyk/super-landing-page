@@ -292,6 +292,15 @@ body {
   transform: scale(1.1) translateY(-1.5rem);
 }
 
+.tour-box {
+  background-color: cadetblue;
+  height: 45rem;
+  transition: 1s;
+}
+.tour-box:hover {
+  transform: rotateY(180deg);
+}
+
 .about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -307,6 +316,12 @@ body {
 }
 .features > * {
   transform: skewY(7deg);
+}
+
+.tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -15vh;
 }
 
 /*# sourceMappingURL=main.css.map */
