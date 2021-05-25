@@ -164,6 +164,10 @@ body {
   flex-basis: 45%;
 }
 
+.flex-col-3 {
+  flex-basis: 29%;
+}
+
 .flex-col-4 {
   flex-basis: 21%;
 }
@@ -293,12 +297,36 @@ body {
 }
 
 .tour-box {
-  background-color: cadetblue;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
   height: 45rem;
-  transition: 1s;
 }
-.tour-box:hover {
+.tour-box__side {
+  height: 45rem;
+  transition: 2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+.tour-box__side--front {
+  background-color: white;
+}
+.tour-box__side--back {
   transform: rotateY(180deg);
+}
+.tour-box__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffb429, #fd5d00);
+}
+.tour-box:hover .tour-box__side--front {
+  transform: rotateY(-180deg);
+}
+.tour-box:hover .tour-box__side--back {
+  transform: rotateY(0);
 }
 
 .about {
