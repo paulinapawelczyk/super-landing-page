@@ -336,8 +336,8 @@ body {
 .tour-box__picture {
   background-size: cover;
   background-blend-mode: screen;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .tour-box__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb429, #fd5d00), url("../img/nat-5.jpg");
@@ -347,6 +347,40 @@ body {
 }
 .tour-box__picture--3 {
   background-image: url("../img/nat-5.jpg");
+}
+.tour-box__header {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 9rem;
+  right: 2rem;
+  text-align: right;
+}
+.tour-box__header-span {
+  padding: 0.7rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.tour-box__header-span--1 {
+  background-image: linear-gradient(to right bottom, #ffb429, #fd5d00);
+}
+.tour-box__details {
+  padding: 3rem 0;
+}
+.tour-box__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.tour-box__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.tour-box__details ul li:not(:last-child) {
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .about {
