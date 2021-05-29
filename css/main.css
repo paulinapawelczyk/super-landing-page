@@ -161,6 +161,15 @@ body {
   flex-wrap: wrap;
 }
 
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -327,6 +336,12 @@ body {
 .tour-box__side--back-1 {
   background-image: linear-gradient(to right bottom, #ffb429, #fd5d00);
 }
+.tour-box__side--back-2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.tour-box__side--back-3 {
+  background-image: linear-gradient(to right bottom, #a7f5f8, #4b2cbd);
+}
 .tour-box:hover .tour-box__side--front {
   transform: rotateY(-180deg);
 }
@@ -343,10 +358,10 @@ body {
   background-image: linear-gradient(to right bottom, #ffb429, #fd5d00), url("../img/nat-5.jpg");
 }
 .tour-box__picture--2 {
-  background-image: url("../img/nat-5.jpg");
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg");
 }
 .tour-box__picture--3 {
-  background-image: url("../img/nat-5.jpg");
+  background-image: linear-gradient(to right bottom, #a7f5f8, #4b2cbd), url("../img/nat-7.jpg");
 }
 .tour-box__header {
   font-size: 2.8rem;
@@ -366,6 +381,12 @@ body {
 .tour-box__header-span--1 {
   background-image: linear-gradient(to right bottom, #ffb429, #fd5d00);
 }
+.tour-box__header-span--2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.tour-box__header-span--3 {
+  background-image: linear-gradient(to right bottom, #a7f5f8, #4b2cbd);
+}
 .tour-box__details {
   padding: 3rem 0;
 }
@@ -381,6 +402,23 @@ body {
 }
 .tour-box__details ul li:not(:last-child) {
   border-bottom: 1px solid #f7f7f7;
+}
+.tour-box__action-back {
+  text-align: center;
+  height: 100%;
+}
+.tour-box__price-box {
+  text-align: center;
+  color: white;
+}
+.tour-box__price-only {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.tour-box__price-value {
+  font-size: 5.5rem;
+  font-weight: 300;
 }
 
 .about {
