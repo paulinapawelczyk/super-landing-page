@@ -36,14 +36,20 @@
 .booking {
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  height: 90vh;
+  height: 80vh;
 }
 .booking-card {
-  height: 80%;
+  height: 90%;
   background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0) 55%), url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+}
+.booking-card__form {
+  border: 2px solid red;
+  padding: 5rem;
+  width: 60%;
+  height: 100%;
 }
 
 @keyframes moveInLeft {
