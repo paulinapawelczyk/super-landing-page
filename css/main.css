@@ -428,19 +428,31 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 600px), (min-device-pixel-ratio: 2) and (min-width: 600px), (min-width: 2000px) {
+  .header {
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url("../img/hero.jpg");
+  }
 }
 @media (max-width: 900px) {
   .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 }
 @media (max-width: 600px) {
   .header {
     height: 100vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
   }
 }
@@ -463,6 +475,7 @@ body {
 .flex {
   max-width: 114rem;
   margin: 0 auto;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-evenly;
 }
@@ -1085,6 +1098,13 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s;
+}
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(75, 75, 75, 0.2);
+  }
 }
 .popup__wrapper {
   background-color: white;
